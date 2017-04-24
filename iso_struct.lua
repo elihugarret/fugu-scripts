@@ -3,7 +3,7 @@ module(...,package.seeall)
 local m, vs, col
 function setup()
 	m = iso(32, function(x,y,z)
-    return x*y + noise(x,y,z) + z*z*z - .25
+  	return x*y + noise(x,y,z) + z*z*z - .25
 	end)
 	fgu:add(meshnode(m))
 	vs = vertexlist(m)
